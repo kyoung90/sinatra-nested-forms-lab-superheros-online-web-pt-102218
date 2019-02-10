@@ -9,7 +9,9 @@
     <h2>Team Motto: <%=@team[motto] %></h2>
 
     <%@team[members].each do |member| %>
-      <h2><%=member[name]%></h2>
+      <h2>Hero Name: <%=member[name]%></h2>
+      <br>
+      <label for="">Hero Power: <%= member[power]%></label>
     <%end %>
 
   </body>
