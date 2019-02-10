@@ -6,7 +6,11 @@
   </head>
   <body>
     <h1><%=@team[name] %></h1>
-    <h2><%=@team[motto] %></h2>
+    <h2>Team Motto: <%=@team[motto] %></h2>
+
+    <%@team[members].each do |member| %>
+      <h2><%=member[name]%></h2>
+    <%end %>
 
   </body>
 </html>
